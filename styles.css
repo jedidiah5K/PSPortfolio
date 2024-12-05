@@ -1,0 +1,320 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Ubuntu', sans-serif;
+  background: url(images/background.gif), no-repeat;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vw;
+  color: #fff;
+  overflow: hidden;
+}
+
+.login-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login-container {
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  width: 300px;
+}
+
+.login-container input {
+  width: 90%;
+  margin: 10px 0;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  color: #ffffff;
+  text-align: center;
+  background-color: rgba(10, 27, 102, 0);
+}
+
+.login-container input:focus {
+  border: 1px solid #587c8a;
+}
+
+.login-container button {
+  background-color: #2244524d;
+  color: rgb(255, 255, 255);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.login-container button:hover {
+  background-color: #008bb5;
+}
+
+#error-message {
+  color: #ff5555;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.password-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.password-container input {
+  width: 100%;
+  padding-right: 40px; 
+}
+
+.password-container img {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+}
+
+.main-page {
+  padding: 20px;
+  text-align: center;
+}
+
+.game-icon {
+  width: 100px;
+  height: 100px;
+  margin: 30px;
+  background: url("images/game-icon.png") center/cover no-repeat;
+}
+
+.arrow-icon {
+  opacity: 0.6;
+  width: 15px;
+  height: 100px;
+  margin: 85px;
+  background: url("images/arrow-icon.png") center no-repeat;
+  background-size: contain;
+}
+
+.portfolio-container {
+  position: relative;
+  top: -875px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+
+  height: 1200px;
+  width: 480px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  padding: 10px;
+  margin: 200px;
+  scroll-behavior: smooth;
+}
+
+
+.portfolio-container::-webkit-scrollbar {
+  width: 50px;
+}
+
+.portfolio {
+  cursor: pointer;
+  text-align: center;
+  font-size: 20px;
+  transition: all 0.3s ease;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  width: 80%;
+  padding-top: 40%;
+  border-radius: 8px;
+  margin: 0 auto;
+}
+
+.portfolio:hover {
+  transform-origin: center;
+  transform: scale(1) translateX(0px);
+  width: 400px;
+  height: 1300px;
+}
+
+#portfolio1 {
+  background-image: url("images/1.jpg");
+}
+
+#portfolio2 {
+  background-image: url("images/12nd.jpg");
+}
+
+#portfolio3 {
+  background-image: url("images/13rd.jpg");
+}
+
+#portfolio4 {
+  background-image: url("images/14th.jpg");
+}
+
+#portfolio5 {
+  background-image: url("images/15th.jpg");
+}
+
+#portfolio6 {
+  background-image: url("images/16th.jpg");
+}
+
+.user-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+}
+
+.user-details {
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  width: 300px;
+}
+
+.user-icon {
+  background: url("images/user-icon.png") center/cover no-repeat;
+  width: 80px;
+  height: 80px;
+  margin-left: 109px;
+}
+
+.user-details button {
+  background-color: #2729685e;
+  color: rgb(255, 255, 255);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 16px;
+}
+
+.user-details button:hover {
+  background-color: #008bb5;
+  transition: opacity 0.3s ease;
+}
+
+.homeportfolio-icon {
+  width: 4vw;
+  height: 4vw;
+  margin-left: -1320px;
+  margin-right: 1430px;
+  margin-bottom: 2px;
+  background-size: contain;
+}
+
+.home-icon {
+  align-items: center;
+  width: 60px;
+  height: auto;
+}
+
+.home-icon:hover { 
+  opacity: 0.8;
+}
+
+.back-btn, .next-btn {
+  background-color: #7278da49;
+  color: rgb(255, 255, 255);
+  padding: 10px;
+  margin-top: -120px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 14px;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.portfolio-title {
+  text-align: center;
+}
+
+.portfolio-content {
+  margin-top: 20px;
+}
+
+.back-btn:hover, .next-btn:hover {
+  background-color: #008bb5;
+}
+
+.portfolio-page {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  padding: 20px;
+}
+
+.portfolio-content {
+  margin-top: 20px;
+}
+
+.pdf-read {
+  display: flex;
+  height: 80vh;
+}
+
+.sidebar {
+  width: 20%;
+  padding: 5px;
+  overflow-y: auto;
+}
+
+.thumbnail {
+  width: 100%;
+  height: auto;
+  margin-bottom: 5px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: transform 0.2s;
+}
+
+.thumbnail:hover {
+  transform: scale(1.1);
+}
+
+.main-view {
+  width: 80%;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.current-page {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.header-content {
+  display: flex;
+  justify-content: wrap;
+  gap: 15px;
+  padding: 10px 1330px;
+}
+
+.header-icon {
+  width: 50px;
+  height: 45px;
+  cursor: pointer;
+}
+
+.header-icon:hover {
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Main Page</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="scripts.js"></script>
+</head>
+
+<body class="main-page">
+  <header>
+    
+    <div class="header-content">
+      <img src="images/home-icon.png" alt="Home" onclick="goHome()" class="homeportfolio-icon">
+      <img src="images/battery-icon.png" alt="Battery Icon" class="header-icon">
+      <img src="images/user-icon.png" alt="User Icon" onclick="goToLogoutPage()" class="header-icon">
+    
+    </div>
+  </header>
+
+  <div class="game-icon"></div>
+  
+  <div class ="battery-icon"></div>
+
+  <div class="arrow-icon"></div>
+
+  <div class="portfolio-container">
+
+    <div class="portfolio blank"></div>
+    <div class="portfolio blank"></div>
+    <div class="portfolio blank"></div>
+
+      <div class="portfolio" id="portfolio1" onclick="goToPortfolio(1)">ㅤ</div>
+      <div class="portfolio" id="portfolio2" onclick="goToPortfolio(2)">ㅤ</div>
+      <div class="portfolio" id="portfolio3" onclick="goToPortfolio(3)">ㅤ</div>
+      <div class="portfolio" id="portfolio4" onclick="goToPortfolio(4)">ㅤ</div>
+      <div class="portfolio" id="portfolio5" onclick="goToPortfolio(5)">ㅤ</div>
+      <div class="portfolio" id="portfolio6" onclick="goToPortfolio(6)">ㅤ</div>
+
+    <div class="portfolio blank"></div>
+    <div class="portfolio blank"></div>
+    <div class="portfolio blank"></div>
+
+  </div>
+</body>
+</html>

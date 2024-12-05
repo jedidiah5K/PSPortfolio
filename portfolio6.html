@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio 6</title>
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="scripts.js"></script>
+</head>
+<body class="portfolio-page">
+
+  <header>
+    <div class="header-content">
+      <img src="images/home-icon.png" alt="Home" onclick="goHome()" class="homeportfolio-icon">
+      <img src="images/battery-icon.png" alt="Battery Icon" class="header-icon">
+      <img src="images/user-icon.png" alt="User Icon" onclick="goToLogoutPage()" class="header-icon">
+    </div>
+  </header>
+
+  <div class="portfolio-content">
+
+    <h1>Portfolio 6</h1>
+    <div>
+      <button class="next-btn" onclick="goNext4()">Back</button>
+      <button class="next-btn" onclick="goNext6()">Next</button>
+    </div>
+
+    <div class="pdf-read">
+
+      <div class="sidebar">
+        <img src="images/16th.jpg" alt="Page 1" class="thumbnail" onclick="showPage('images/16th.jpg')">
+        <img src="images/26th.jpg" alt="Page 2" class="thumbnail" onclick="showPage('images/26th.jpg')">
+        <img src="images/36th.jpg" alt="Page 3" class="thumbnail" onclick="showPage('images/36th.jpg')">
+        <img src="images/46th.jpg" alt="Page 4" class="thumbnail" onclick="showPage('images/46th.jpg')">
+        <img src="images/56th.jpg" alt="Page 5" class="thumbnail" onclick="showPage('images/56th.jpg')">
+        <img src="images/66th.jpg" alt="Page 6" class="thumbnail" onclick="showPage('images/66th.jpg')">
+        <img src="images/76th.jpg" alt="Page 7" class="thumbnail" onclick="showPage('images/76th.jpg')">
+        <img src="images/86th.jpg" alt="Page 8" class="thumbnail" onclick="showPage('images/86th.jpg')">
+      </div>
+
+      <div class="main-view">
+        <img src="images/16th.jpg" alt="Current Page" id="current-page" class="current-page">
+      </div>
+
+    </div>
+
+  </div>
+
+</body>
+</html>

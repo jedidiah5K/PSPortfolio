@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio 3</title>
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="scripts.js"></script>
+</head>
+<body class="portfolio-page">
+
+  <header>
+    <div class="header-content">
+      <img src="images/home-icon.png" alt="Home" onclick="goHome()" class="homeportfolio-icon">
+      <img src="images/battery-icon.png" alt="Battery Icon" class="header-icon">
+      <img src="images/user-icon.png" alt="User Icon" onclick="goToLogoutPage()" class="header-icon">
+    </div>
+  </header>
+
+  <div class="portfolio-content">
+
+    <h1>Portfolio 3</h1>
+    <div>
+      <button class="next-btn" onclick="goNext1()">Back</button>
+      <button class="next-btn" onclick="goNext3()">Next</button>
+    </div>
+
+    <div class="pdf-read">
+
+      <div class="sidebar">
+        <img src="images/13rd.jpg" alt="Page 1" class="thumbnail" onclick="showPage('images/13rd.jpg')">
+        <img src="images/23rd.jpg" alt="Page 2" class="thumbnail" onclick="showPage('images/23rd.jpg')">
+        <img src="images/33rd.jpg" alt="Page 3" class="thumbnail" onclick="showPage('images/33rd.jpg')">
+        <img src="images/43rd.jpg" alt="Page 4" class="thumbnail" onclick="showPage('images/43rd.jpg')">
+        <img src="images/53rd.jpg" alt="Page 5" class="thumbnail" onclick="showPage('images/53rd.jpg')">
+        <img src="images/63rd.jpg" alt="Page 6" class="thumbnail" onclick="showPage('images/63rd.jpg')">
+        <img src="images/73rd.jpg" alt="Page 7" class="thumbnail" onclick="showPage('images/73rd.jpg')">
+        <img src="images/83rd.jpg" alt="Page 8" class="thumbnail" onclick="showPage('images/83rd.jpg')">
+        <img src="images/93rd.jpg" alt="Page 9" class="thumbnail" onclick="showPage('images/93rd.jpg')">
+        <img src="images/103rd.jpg" alt="Page 10" class="thumbnail" onclick="showPage('images/103rd.jpg')">
+      </div>
+
+      <div class="main-view">
+        <img src="images/13rd.jpg" alt="Current Page" id="current-page" class="current-page">
+      </div>
+
+    </div>
+
+  </div>
+
+</body>
+</html>
